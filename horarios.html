@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Horario Escolar</title>
+  <style>
+    body {
+      background-color: #fff6e5;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 40px;
+      text-align: center;
+    }
+    h2 {
+      color: #b35c1e;
+      margin-bottom: 20px;
+    }
+    table {
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+      border-collapse: collapse;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    th, td {
+      padding: 12px 15px;
+      border: 1px solid #e0a96d;
+      text-align: center;
+    }
+    th {
+      background-color: #f4a261;
+      color: white;
+    }
+    td {
+      background-color: #ffe8cc;
+    }
+    tr:hover td {
+      background-color: #ffe1b3;
+    }
+    @media screen and (max-width: 600px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+      th {
+        display: none;
+      }
+      td {
+        margin-bottom: 10px;
+        text-align: right;
+        position: relative;
+        padding-left: 50%;
+      }
+      td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        text-align: left;
+        font-weight: bold;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h2>Horario Escolar</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Hora</th>
+        <th>Lunes</th>
+        <th>Martes</th>
+        <th>Miércoles</th>
+        <th>Jueves</th>
+        <th>Viernes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-label="Hora">7:00 - 8:00</td>
+        <td data-label="Lunes">Matemáticas</td>
+        <td data-label="Martes">Física</td>
+        <td data-label="Miércoles">Historia</td>
+        <td data-label="Jueves">Biología</td>
+        <td data-label="Viernes">Química</td>
+      </tr>
+      <tr>
+        <td data-label="Hora">8:00 - 9:00</td>
+        <td data-label="Lunes">Español</td>
+        <td data-label="Martes">Inglés</td>
+        <td data-label="Miércoles">Matemáticas</td>
+        <td data-label="Jueves">Geografía</td>
+        <td data-label="Viernes">Educación Física</td>
+      </tr>
+      <tr>
+        <td data-label="Hora">9:00 - 10:00</td>
+        <td data-label="Lunes">Química</td>
+        <td data-label="Martes">Biología</td>
+        <td data-label="Miércoles">Inglés</td>
+        <td data-label="Jueves">Historia</td>
+        <td data-label="Viernes">Matemáticas</td>
+      </tr>
+      <tr>
+        <td data-label="Hora">10:00 - 10:30</td>
+        <td colspan="5">Receso</td>
+      </tr>
+      <tr>
+        <td data-label="Hora">10:30 - 11:30</td>
+        <td data-label="Lunes">Física</td>
+        <td data-label="Martes">Español</td>
+        <td data-label="Miércoles">Inglés</td>
+        <td data-label="Jueves">Tecnología</td>
+        <td data-label="Viernes">Tutoría</td>
+      </tr>
+      <tr>
+        <td data-label="Hora">11:30 - 12:30</td>
+        <td data-label="Lunes">Tutoría</td>
+        <td data-label="Martes">Arte</td>
+        <td data-label="Miércoles">Formación Cívica</td>
+        <td data-label="Jueves">Educación Física</td>
+        <td data-label="Viernes">Español</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

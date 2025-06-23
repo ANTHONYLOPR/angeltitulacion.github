@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Menú de Registro</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #fff3e0, #ffe0b2);
+      color: #4e342e;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 50px;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    h1 {
+      color: #d84315;
+      font-size: 48px;
+      margin-bottom: 40px;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .menu button {
+      padding: 20px;
+      font-size: 20px;
+      background: linear-gradient(135deg, #ffab91, #ff7043);
+      border: none;
+      color: #ffffff;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .menu button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Menú de Registros</h1>
+
+  <div class="menu">
+    <button onclick="location.href='alumnos.htm'">Registro de Alumnos</button>
+    <button onclick="location.href='visitantes.html'">Registro de Visitantes</button>
+    <button onclick="location.href='tutores.html'">Registro de Tutores</button>
+    <button onclick="location.href='horarios.html'">Horario Escolar</button>
+  </div>
+
+</body>
+</html>

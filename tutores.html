@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro de Tutores</title>
+  <style>
+    body {
+      background-color: #fff3e0;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 40px;
+      color: #5d4037;
+    }
+
+    h2 {
+      text-align: center;
+      color: #e64a19;
+    }
+
+    form {
+      max-width: 600px;
+      margin: auto;
+      background-color: #ffe0b2;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #d7ccc8;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #bcaaa4;
+      margin-top: 5px;
+    }
+
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background-color: #ff7043;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #e64a19;
+    }
+  </style>
+</head>
+<body>
+  <h2>Registro de Tutores</h2>
+  <form action="registro_tutores.php" method="POST">
+    <label>Nombre Completo
+      <input name="nombre" placeholder="Nombre Completo" required>
+    </label>
+    <label>Procedencia
+      <input name="procedencia" placeholder="Procedencia" required>
+    </label>
+    <label>Área de Visita
+      <input name="area" placeholder="Área de Visita" required>
+    </label>
+    <label>Persona que Visita
+      <input name="persona" placeholder="Persona que Visita" required>
+    </label>
+    <label>Asunto
+      <input name="asunto" placeholder="Asunto" required>
+    </label>
+    <label>Identificación
+      <input name="identificacion" placeholder="Identificación" required>
+    </label>
+    <label>Nombre del Alumno
+      <input name="alumno" placeholder="Nombre del Alumno" required>
+    </label>
+    <label>Hora de Entrada
+      <input type="time" name="hora_entrada" required>
+    </label>
+    <label>Hora de Salida
+      <input type="time" name="hora_salida" required>
+    </label>
+    <button type="submit">Registrar</button>
+  </form>
+</body>
+</html>

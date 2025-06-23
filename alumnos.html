@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro de Alumnos</title>
+  <style>
+    body {
+      background-color: #fff3e0;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 40px;
+      color: #5d4037;
+    }
+
+    h2 {
+      text-align: center;
+      color: #e64a19;
+    }
+
+    form {
+      max-width: 600px;
+      margin: auto;
+      background-color: #ffe0b2;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #d7ccc8;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #bcaaa4;
+      margin-top: 5px;
+    }
+
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background-color: #ff7043;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #e64a19;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Registro de Alumnos</h2>
+  <form action="registro_alumnos.php" method="POST">
+    <label>Nombre Completo:</label>
+    <input type="text" name="nombre" required>
+
+    <label>Número de Control:</label>
+    <input type="text" name="control" required>
+
+    <label>Grupo:</label>
+    <input type="text" name="grupo" required>
+
+    <label>Asunto:</label>
+    <input type="text" name="asunto" required>
+
+    <label>Motivo:</label>
+    <select name="motivo" required>
+      <option value="">Selecciona una opción</option>
+      <option value="Servicio Social">Servicio Social</option>
+      <option value="Externo">Externo</option>
+      <option value="Trámites">Trámites</option>
+    </select>
+
+    <label>Fecha:</label>
+    <input type="date" name="fecha" required>
+
+    <label>Hora de Entrada:</label>
+    <input type="time" name="entrada" required>
+
+    <label>Hora de Salida:</label>
+    <input type="time" name="salida" required>
+
+    <button type="submit">Registrar Alumno</button>
+  </form>
+
+</body>
+</html>
